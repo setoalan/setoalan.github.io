@@ -16,10 +16,14 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #fff;
+  background: url(../img/bg.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
+
 body {
-  color: #000;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
 }
 
@@ -59,23 +63,24 @@ body {
 .header-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
+  font-size: 24px;
+  text-shadow: 2px 2px #000;
   font-weight: bold;
-  color: #000; /* IE8 proofing */
+  color: #fff;
   border-bottom: 2px solid transparent;
 }
 
 .header-nav > li > a:hover,
 .header-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #000;
+  border-bottom-color: #fff;
 }
 
 .header-nav > .active > a,
 .header-nav > .active > a:hover,
 .header-nav > .active > a:focus {
-  color: #000;
-  border-bottom-color: #000;
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -92,6 +97,16 @@ body {
   padding: 0 20px;
 }
 
+.cover-heading {
+  font-size: 64px;
+  text-shadow: 4px 4px #000;
+}
+
+.cover-paragraph {
+  font-size: 24px;
+  text-shadow: 2px 2px #000;
+}
+
 /*
  * Affix and Center
  */
@@ -100,11 +115,6 @@ body {
   .header {
     position: fixed;
     top: 0;
-  }
-
-  .foot {
-    position: fixed;
-    bottom: 0;
   }
 
   .site-wrapper-inner {
@@ -120,7 +130,6 @@ body {
 
 @media (min-width: 992px) {
   .header,
-  .foot,
   .cover-container {
     width: 75%;
   }
