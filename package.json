@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/setoalan/setoalan.github.io/issues"
   },
-  "homepage": "https://github.com/setoalan/setoalan.github.io#readme"
+  "homepage": "https://github.com/setoalan/setoalan.github.io#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-usemin": "^0.3.28",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
 }
