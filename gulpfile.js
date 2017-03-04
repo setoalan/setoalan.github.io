@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
   del = require('del'),
   jshint = require('gulp-jshint'),
   stylish = require('jshint-stylish'),
@@ -15,7 +15,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('jshint', function () {
-  return gulp.src(['./app/scripts/index.js'])
+  return gulp.src(['./app/scripts/**/*'])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
 });
