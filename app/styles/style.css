@@ -4,13 +4,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background: url('https://unsplash.it/g/1920/1080/?image=985') no-repeat;
+  background: url('../assets/bg.jpg') no-repeat;
   background-size: cover;
   justify-content: center;
-}
-
-p {
-  margin: 0;
 }
 
 .container {
@@ -20,8 +16,7 @@ p {
 }
 
 .main {
-  font-size: 36px;
-  padding: 10px 0 5px 0;
+  padding: 10px 0 2px 0;
   color: #ffffff;
   background-color: rgba(255, 255, 255, .25);
   text-shadow: 1px 1px 4px #000000;
@@ -69,4 +64,64 @@ p {
 #footer > p {
   font-size: 12px;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+  p {
+    margin: 10px 0;
+  }
+
+  .main {
+    font-size: 1em;
+  }
+
+  .buttons {
+    margin-bottom: 10px;
+  }
+
+  .buttons > a {
+    width: 100px;
+  }
+
+  .social-icons {
+    margin-bottom: 2px;
+  }
+
+  .social-icons > a {
+    margin: 0 10px;
+  }
+
+  #footer {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  p {
+    margin: 10px 0;
+  }
+
+  .main {
+    font-size: 1.5em;
+  }
+
+  .buttons {
+    margin-bottom: 10px;
+  }
+
+  #footer {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media (min-width: 970px) {
+
+  .main {
+    font-size: 2em;
+  }
+
 }
