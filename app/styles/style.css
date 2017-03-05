@@ -1,34 +1,72 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-nav {
+  font-family: Oxygen, sans-serif;
   display: flex;
-  height: 10vh;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: url('https://unsplash.it/g/1920/1080/?image=985') no-repeat;
+  background-size: cover;
+  justify-content: center;
 }
 
-nav > a {
-  font-size: 20px;
-  padding: 10px 20px;
-  margin: 15px;
-  flex-grow: 1;
-  text-align: center;
-}
-
-a {
-  color: black;
-  text-decoration: none;
+p {
+  margin: 0;
 }
 
 .container {
   display: flex;
-  height: 90vh;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.blank-space {
-  flex-grow: 10;
+.main {
+  font-size: 36px;
+  padding: 10px 0 5px 0;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, .25);
+  text-shadow: 1px 1px 4px #000000;
+}
+
+.buttons {
+  align-self: center;
+}
+
+.buttons > a {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  width: 150px;
+  margin: 0 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+
+.social-icons > a {
+  margin: 0 2px;
+}
+
+#headshot {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+#footer > p {
+  font-size: 12px;
+  color: #ffffff;
 }
