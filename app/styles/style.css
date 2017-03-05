@@ -1,3 +1,7 @@
+* {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Oxygen, sans-serif;
   display: flex;
@@ -15,23 +19,19 @@ a {
   text-decoration: none;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .main {
   padding: 10px 0 2px 0;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0.25);
   text-shadow: 1px 1px 4px #000000;
 }
 
 .buttons {
   align-self: center;
+  margin-bottom: 10px;
 }
 
 .buttons > a {
-  font-family: Helvetica, sans-serif;
   font-size: 16px;
   display: inline-block;
   width: 150px;
@@ -63,7 +63,7 @@ a {
   height: 100%;
   padding: 10px 200px;
   border-right: 1px solid black;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
   align-items: center;
   justify-content: center;
 }
@@ -87,7 +87,7 @@ a {
   position: absolute;
   bottom: 0;
   align-self: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #footer > p {
@@ -97,16 +97,8 @@ a {
 
 @media (max-width: 768px) {
 
-  p {
-    margin: 10px 0;
-  }
-
   .main {
     font-size: 1em;
-  }
-
-  .buttons {
-    margin-bottom: 10px;
   }
 
   .buttons > a {
@@ -115,14 +107,6 @@ a {
 
   .social-icons {
     margin-bottom: 2px;
-  }
-
-  .social-icons > a {
-    margin: 0 10px;
-  }
-
-  #footer {
-    margin-bottom: 5px;
   }
 
 }
@@ -135,14 +119,6 @@ a {
 
   .main {
     font-size: 1.5em;
-  }
-
-  .buttons {
-    margin-bottom: 10px;
-  }
-
-  #footer {
-    margin-bottom: 5px;
   }
 
 }
