@@ -3,30 +3,37 @@ const gulp = require('gulp'),
   jshint = require('gulp-jshint'),
   stylish = require('jshint-stylish'),
   usemin = require('gulp-usemin'),
+  minifycss = require('gulp-minify-css'),
   rev = require('gulp-rev'),
   autoprefixer = require('gulp-autoprefixer'),
   cleancss = require('gulp-clean-css'),
   uglify = require('gulp-uglify'),
   cache = require('gulp-cache'),
-  imagemin = require('gulp-imagemin');
+  imagemin = require('gulp-imagemin'),
+  foreach = require('gulp-foreach'),
+  babel = require('gulp-babel'),
+  ngannotate = require('gulp-ng-annotate');
 
 gulp.task('clean', function () {
-  del(['scripts', 'styles']);
+  del(['assets', 'scripts', 'styles', 'views']);
 });
 
 gulp.task('jshint', function () {
-  return gulp.src(['./app/scripts/**/*'])
+  return gulp.src(['./app/scripts/**/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
 });
 
 gulp.task('usemin', ['jshint'], function () {
-  return gulp.src('./app/index.html')
-    .pipe(usemin({
-      css: [autoprefixer(), cleancss(), rev()],
-      js: [uglify(), rev()]
-    }))
-    .pipe(gulp.dest('./'));
+  return gulp.src('./app/**/*.html')
+    .pipe(foreach(function (stream, file) {
+      return stream
+        .pipe(usemin({
+          css: [minifycss(), rev()],
+          js: [babel({presets: ['es2015'], compact: false}), ngannotate(), uglify(), rev()]
+        }))
+        .pipe(gulp.dest('./'));
+    }));
 });
 
 gulp.task('imagemin', function () {

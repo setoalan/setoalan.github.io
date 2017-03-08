@@ -1,3 +1,5 @@
+'use strict';
+
 const slider = document.querySelector('.items');
 let isDown = false;
 let startX;
@@ -18,7 +20,9 @@ slider.addEventListener('mouseup', () => {
 });
 
 slider.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
+  if (!isDown) {
+    return;
+  }
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
   const walk = (x - startX) * 2;
