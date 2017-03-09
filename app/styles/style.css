@@ -6,18 +6,18 @@ body {
   font-family: Oxygen, sans-serif;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   min-height: 100vh;
   margin: 0;
+  text-align: center;
   background: url('../assets/bg.jpg') fixed;
   background-size: cover;
   justify-content: center;
-  box-sizing: border-box;
-  text-align: center;
 }
 
 a, a:visited {
-  color: #00bfff;
   text-decoration: none;
+  color: #00bfff;
   text-shadow: 1px 1px 4px #000000;
 }
 
@@ -73,8 +73,8 @@ p {
   font-size: 24px;
   display: flex;
   width: 100vw;
-  padding: 0 10vw;
   min-height: 100%;
+  padding: 0 10vw;
   align-items: center;
   justify-content: center;
 }
@@ -90,8 +90,8 @@ p {
 .footer {
   position: absolute;
   bottom: 0;
-  align-self: center;
   margin-bottom: 5px;
+  align-self: center;
 }
 
 .footer > p {
@@ -143,8 +143,8 @@ p {
   }
 
   .project > p {
-    width: 100%;
     font-size: 0.65em;
+    width: 100%;
     margin-left: 10px;
   }
 
@@ -162,8 +162,8 @@ p {
   }
 
   .project > p {
-    width: 100%;
     font-size: 0.90em;
+    width: 100%;
   }
 
 }

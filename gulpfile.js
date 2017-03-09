@@ -11,7 +11,6 @@ const gulp = require('gulp'),
   cache = require('gulp-cache'),
   imagemin = require('gulp-imagemin'),
   foreach = require('gulp-foreach'),
-  babel = require('gulp-babel'),
   ngannotate = require('gulp-ng-annotate');
 
 gulp.task('clean', function () {
@@ -30,7 +29,7 @@ gulp.task('usemin', ['jshint'], function () {
       return stream
         .pipe(usemin({
           css: [minifycss(), rev()],
-          js: [babel({presets: ['es2015'], compact: false}), ngannotate(), uglify(), rev()]
+          js: [ngannotate(), uglify(), rev()]
         }))
         .pipe(gulp.dest('./'));
     }));
