@@ -21,6 +21,10 @@ a, a:visited {
   text-shadow: 1px 1px 4px #000000;
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   margin: 0;
   color: #ffffff;
@@ -61,7 +65,7 @@ p {
 .projects {
   font-size: 0;
   overflow-y: scroll;
-  height: 60vh;
+  height: 80vh;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -77,6 +81,10 @@ p {
 
 .project-title {
   font-size: 2em;
+}
+
+.home {
+  margin-top: 5px;
 }
 
 .footer {
@@ -103,10 +111,6 @@ p {
 
   .social-icons {
     margin-bottom: 2px;
-  }
-
-  .project {
-    height: 75vh;
   }
 
   .project {
@@ -139,6 +143,7 @@ p {
   }
 
   .project > p {
+    width: 100%;
     font-size: 0.65em;
     margin-left: 10px;
   }
@@ -157,6 +162,7 @@ p {
   }
 
   .project > p {
+    width: 100%;
     font-size: 0.90em;
   }
 
