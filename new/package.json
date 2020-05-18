@@ -2,7 +2,7 @@
   "name": "setoalan.github.io",
   "description": "Alan Seto's Personal Website",
   "version": "0.1.0",
-  "author": "Alan Seto <alantseto@gmail.com> (https://alanseto.com",
+  "author": "Alan Seto <alantseto@gmail.com> (https://alanseto.com)",
   "dependencies": {
     "gatsby": "^2.21.22",
     "gatsby-image": "^2.4.3",
