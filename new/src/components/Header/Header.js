@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Header = ({ siteTitle }) => (
-  <header style={{ padding: '1.5rem 0' }}>
+  <header>
     <div
       style={{
         display: 'flex',
