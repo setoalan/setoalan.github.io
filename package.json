@@ -1,21 +1,20 @@
 {
   "name": "setoalan.github.io",
-  "version": "1.0.3",
+  "version": "0.1.0",
   "description": "Alan Seto's Personal Website",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "http://alanseto.com",
+  "bugs": {
+    "url": "https://github.com/setoalan/setoalan.github.io/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/setoalan/setoalan.github.io.git"
   },
-  "author": "Alan Seto <alantseto@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/setoalan/setoalan.github.io/issues"
+  "author": "Alan Seto <alantseto@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "http://alanseto.com",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
