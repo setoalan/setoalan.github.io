@@ -9,7 +9,10 @@
   },
   "author": "Alan Seto <hello@alanseto.com>",
   "scripts": {
+    "dev": "node .",
     "start": "open public/index.html"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
