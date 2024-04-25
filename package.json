@@ -9,10 +9,12 @@
   },
   "author": "Alan Seto <hello@alanseto.com>",
   "scripts": {
+    "deploy": "gh-pages -d public",
     "dev": "node .",
     "start": "open public/index.html"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "live-server": "^1.2.2"
   }
 }
