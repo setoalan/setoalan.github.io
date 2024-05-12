@@ -6,8 +6,10 @@ body {
 
 .background {
   position: fixed;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
+  transform: translateX(-50%);
 }
 
 .video {
