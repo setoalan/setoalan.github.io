@@ -141,12 +141,30 @@ body {
   }
 
   .description {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .social-icon {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (max-height: 464px) {
+  .content {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .social-links {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
